@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Esaminatore</title>
+		<link rel="stylesheet" type="text/css" href="css/home.css"/>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="JSON/Domande.js"></script>
+		<script src="js/quiz.js"></script>
+		
+	</head>
+	<body>
+		<div id="quesito">
+			<h1 id="prog"> Programma quesiti a scelta multipla</h1>
+			<div id="domanda">
+				<p id ="testo"></p>
+				<button id="modes" type="submit" onclick="start(true)">Modalità esame</button>
+				<form id="radio" name="selezDom" ">
+				<!--  <input type="radio" name="selezDom" value="A"> 
+				  <input type="radio" name="selezDom" value="B"> 
+				  <input type="radio" name="selezDom" value="C">   Input di esempio-->
+				</form>
+			</div>
+			<div id="codice">
+				<button id="modst" type="submit" onclick="start(false)">Modalità libera</button>
+			</div>
+		</div>
+		<nav>
+			
+			
+			<button id="btnprev" type="submit" style="display:none"; onclick="prevDomanda()">Precedente domanda</button>
+			<button id="btnnext" type="submit" style="display:none"; onclick="nextDomanda()">Prossima domanda</button>
+			<button id="btnsoluz" type="submit" style="display:none"; onclick="dammiSoluz()">Dammi la soluzione</button>
+		</nav>
+		<div id="soluz"></div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+
+body {height:100%;width:100%; margin:auto; background-color:#2E86AB; font-family:sans-serif;}
+h1 {height:100%;width:50%; margin:auto; text-align:center }
+#quesito {margin:auto;width:100%;height:100%;clear:both;}
+#domanda {margin:auto;margin-left:15px; height:50%;width:48%; background-color:#F18F01; float:left; min-height:300px;padding:10px;border-radius:5px}
+#soluz { margin:auto; height:30%; width:90%; background-color:#C73E1D;min-height:300px;padding:10px;border-radius:5px;}
+#codice {margin:auto; margin-left:5px; height:50%;width:48%; float:left; background-color:#A5999E; min-height:300px; padding:10px;border-radius:5px}
+
+nav {margin:auto;height:20%;width:100%;display:inline-block;margin-top:2%;margin-bottom:2%; text-align:center}
+
+#quesito::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#domanda::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#domanda * {margin-left:10px;}
+#soluz::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
