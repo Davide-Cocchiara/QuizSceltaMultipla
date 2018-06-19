@@ -10,10 +10,10 @@
 		
 	</head>
 	<body>
+		<h1 id="prog"> Programma quesiti a scelta multipla</h1>
 		<div id="quesito">
-			<h1 id="prog"> Programma quesiti a scelta multipla</h1>
 			<div id="domanda">
-				<p id ="testo"></p>
+				<p id ="testo">Nella modalità esame non è possibile tornare indietro. Alla fine riceverai un esito, ed un resoconto dei tuoi errori con la spiegazione</p>
 				<button id="modes" type="submit" onclick="start(true)">Modalità esame</button>
 				<form id="radio" name="selezDom" ">
 				<!--  <input type="radio" name="selezDom" value="A"> 
@@ -22,6 +22,7 @@
 				</form>
 			</div>
 			<div id="codice">
+				<p id ="codiceintro">Nella modalità libera è possibile tornare indietro e visionare la soluzione di ogni quesito, alla fine non ci sarà un esito.</p>
 				<button id="modst" type="submit" onclick="start(false)">Modalità libera</button>
 			</div>
 		</div>
